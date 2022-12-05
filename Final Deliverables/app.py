@@ -55,7 +55,7 @@ def upload():
         inp = np.array([x])
         with graph.as_default():
             #loading the saved model from training
-            json_file = open('C:/Users/0xluk/OneDrive/Desktop/Project Development Phase/Sprint 2/DigitalNaturalist.json', 'r')
+            json_file = open('C:/Users/sudha/OneDrive/Desktop/Project Development Phase/Sprint 2/DigitalNaturalist.json', 'r')
             loaded_model_json = json_file.read()
             json_file.close()
             loaded_model = model_from_json(loaded_model_json)
