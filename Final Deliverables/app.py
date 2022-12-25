@@ -60,7 +60,7 @@ def upload():
             json_file.close()
             loaded_model = model_from_json(loaded_model_json)
             #adding weights to the trained model
-            loaded_model.load_weights("C:/Users/0xluk/OneDrive/Desktop/Project Development Phase/Sprint 2/DigitalNaturalist.h5")
+            loaded_model.load_weights("C:/Users/sudha/OneDrive/Desktop/Project Development Phase/Sprint 2/DigitalNaturalist.h5")
             #predecting the image
             preds =  np.argmax(loaded_model.predict(inp),axis=1)
             #logs are printed to the console 
